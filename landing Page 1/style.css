@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Monument */
+@font-face {
+  font-family: "Monument";
+  src: url("../fonts/MonumentExtended-Ultrabold.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: hsl(346deg 17% 70%);
+  display: flex;
+  overflow: hidden;
+}
+
+#part1 {
+  height: 100%;
+  width: 26%;
+}
+
+#part2 {
+  height: 100%;
+  width: 67%;
+  background-image: url(assets/model1.jpg);
+  background-size: cover;
+}
+
+#overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(192, 165, 172, 0.487);
+  top: 0;
+  left: 0;
+}
+
+#part3 {
+  height: 100%;
+  width: 7%;
+}
+
+#text-div {
+  position: absolute;
+  width: 400px;
+  top: 50%;
+  left: 5%;
+  transform: translate(0, -50%);
+}
+
+#text-div > h1 {
+  font-size: 80px;
+  font-family: Monument;
+  font-weight: 900;
+  letter-spacing: 11px;
+  text-transform: uppercase;
+  line-height: 65px;
+  color: white;
+}
+
+#small-image {
+  height: 400px;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  right: 4%;
+  transform: translate(0, -50%);
+  background-image: url(assets/model2.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#small-image #overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(192, 165, 172, 0.487);
+}
+
+#vertical-text {
+  position: absolute;
+  top: 35%;
+  right: -23%;
+  transform: rotate(90deg);
+}
+
+#vertical-text h1 {
+  font-size: 50px;
+  font-weight: 900;
+  font-family: Gilroy;
+  letter-spacing: 14px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  color: transparent;
+  text-transform: uppercase;
+}
+
+#nav {
+  position: absolute;
+  width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  left: 7%;
+  top: 5%;
+}
+
+#nav img {
+  height: 60px;
+}
+
+#nav h5 {
+  font-size: 12px;
+  font-family: Monument;
+  color: #fff;
+}
